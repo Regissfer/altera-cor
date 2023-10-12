@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem</title>
+    <style>
+        #bike{
+            display: block;
+            width: 300px;
+            height: 300px;
+            margin: auto;
+        }
+
+        .botao{
+            margin: auto 620px;
+            width: 100px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <img id = 'bike' src ="bicicleta.jpg.jpg" alt="Foto de bicicleta">;
+    <button class = 'botao'>Clique aqui</button>;
+
+    <script>
+        var btn = document.querySelector('.botao');
+        var img = document.querySelector('#bike')
+
+        btn.addEventListener('click', function(){
+            if(img.style.display === 'block'){
+                img.style.display = 'none'
+            }else{
+                img.style.display = 'block'
+            }
+            
+        });
+
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Dados</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <button id = 'botao'>Jogue o dado</button>
+    <p id = 'result'>Resultado</p>
+    
+    <script>
+        var btn = document.querySelector('#botao');
+        var result = document.querySelector('#result');
+        
+        
+
+        btn.addEventListener('click', function(){            
+            var random = Math.floor(Math.random()*6) + 1;
+
+            result.textContent =`Resultado ${random}`;
+
+
+            
+
+            
+        });
+    </script>
+</body>
+</html>
